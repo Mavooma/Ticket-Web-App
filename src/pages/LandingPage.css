@@ -1,0 +1,148 @@
+/* Container */
+.landing-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  color: #174866;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 2rem;
+  background-color: #f7f9fc;
+}
+
+/* Background Images */
+.bg-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.bg-bubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  opacity: 0.9; /* Optional for better blending */
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+.app-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.app-description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #174866;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #bb8d6c;
+}
+
+.btn.secondary {
+  background-color: #bb8d6c;
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  background-color: #174866;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  background: #f7f9fc;
+}
+
+.feature-box {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+.footer {
+  padding: 1.5rem;
+  background-color: #174866;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .feature-box {
+    width: 90%;
+  }
+
+  .hero-content {
+    padding: 1.5rem;
+  }
+}
